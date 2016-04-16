@@ -1,0 +1,39 @@
+{
+  "status": "200/500",
+  "code": "201",
+  "data": {
+    "id": "1",
+    "name": "这是标题",
+    "subname": "副标题",
+    "rankitems": [{
+      "id": "1",
+      "reason": "推荐理由1",
+      "pic": "xxx",
+      "name": "name",
+      "chinesename": "chinesename",
+      "score": 4.5
+      },{
+      "id": "2",
+      "reason": "推荐理由1",
+      "pic": "xxx",
+      "name": "name",
+      "chinesename": "chinesename",
+      "score": 4.5
+      },{
+      "id": "3",
+      "reason": "推荐理由1",
+      "pic": "xxx",
+      "name": "name",
+      "chinesename": "chinesename",
+      "score": 4.5
+      },{
+      "id": "4",
+      "reason": "推荐理由1推荐理由1推荐理由1推荐理由1推荐理由1推荐理由1推荐理由1推荐理由1推荐理由1推荐理由1推荐理由1推荐理由1推荐理由1推荐理由1",
+      "pic": "xxx",
+      "name": "name",
+      "chinesename": "chinesename",
+      "score": 4.5
+      }]
+  },
+  "message": ""
+}
