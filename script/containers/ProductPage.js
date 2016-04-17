@@ -7,6 +7,7 @@
 import React, {Component} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
+import {Link} from 'react-router';
 import './productPage.css';
 
 // 导入相关的actions
@@ -59,19 +60,24 @@ class StaticPage extends Component {
                         <p className="product-chinesename">{product.chinesename}</p>
                         <p className="product-name">{product.name}</p>
                     </div>
+                </div>
+                <img className="product-picture" src={picurl} />
+                <div className="product-platform clear">
+                    <div className="f-left">
+                        <img className="f-left" src="/asset/imgs/OS.png" />
+                        <span className="f-left platform-title">支持设备</span>
+                        <div className="clear"></div>
+                        {platformlist}
+                    </div>
                     <div className="f-right">
                         {pilllist}
                         <p className="product-scorenum">{product.score} 分</p>
                     </div>
                 </div>
-                <img className="product-picture" src={picurl} />
-                <div className="product-platform clear">
-                    <img className="f-left" src="/asset/imgs/OS.png" />
-                    <span className="f-left platform-title">支持设备</span>
-                    {platformlist}
-                </div>
                 <hr />
                 <pre className="product-desc">{product.description}</pre>
+                <hr />
+                <p className="product-toplink">还想看看别的游戏吗？点击查看 <Link to="/rank/">最新榜单</Link>吧！</p>
             </div>
         );
     }

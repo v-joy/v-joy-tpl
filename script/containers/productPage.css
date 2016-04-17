@@ -56,9 +56,9 @@
 }
 
 .product-container .product-platform .platform-device{
-    height: 18px;
+    height: 25px;
     padding: 0 10px;
-    line-height: 18px;
+    line-height: 25px;
     color: #b3aab3;
     border: 1px solid #aaaaaa;
     margin: 5px 10px 0 0;
@@ -70,4 +70,13 @@
     line-height: 20px;
     padding-top: 14px;
     color: #101010;
+}
+
+.product-container .product-toplink {
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
 }
