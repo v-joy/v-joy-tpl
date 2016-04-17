@@ -17,6 +17,9 @@ class Header extends React.Component {
                         <Link to="/" activeClassName="active">最新排行榜</Link>
                     </li>
                     <li>
+                        <Link to="/" activeClassName="active">历史排行榜</Link>
+                    </li>
+                    <li>
                         <Link to="/article/1" activeClassName="active">关于我们</Link>
                     </li>
                 </ul>

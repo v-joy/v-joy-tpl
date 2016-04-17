@@ -21,6 +21,8 @@ class RouteMap extends Component {
             <Router history={browserHistory} onUpdate={this.onUpdate.bind(this)}>
                 <Route path="/" component={App}>
                     <IndexRoute component={RankPage}/>
+                    <Route path="/rank/" component={RankPage}/>
+                    <Route path="/rank/:rankId" component={RankPage}/>
                     <Route path="/product/:productId" component={ProductPage}/>
                 </Route>
             </Router>

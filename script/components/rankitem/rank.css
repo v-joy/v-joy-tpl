@@ -29,7 +29,8 @@
     color: #101010;
     font: 11px/16px 'Microsoft';
     overflow: hidden;
-    display: block;
+    display: table-cell;
+    vertical-align: middle;
     height: 32px;
 }
 

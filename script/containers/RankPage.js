@@ -20,7 +20,7 @@ class RankPage extends Component {
 
     componentWillMount() {
         const {rankActions} = this.props;
-        rankActions.fetchRank();
+        rankActions.fetchRank(this.props.params.rankId || null);
     }
 
     render() {
