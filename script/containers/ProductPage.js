@@ -8,7 +8,6 @@ import React, {Component} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import './productPage.css';
-import {Link} from 'react-router';
 
 // 导入相关的actions
 import * as productActionCreators from '../actions/Product';
@@ -66,12 +65,7 @@ class StaticPage extends Component {
                     {platformlist}
                 </div>
                 <hr />
-                <p className="product-desc"><pre>{product.description}</pre></p>
-
-                <br />
-                <br />
-                <br />
-                <Link to="/">new!!!!</Link>
+                <pre className="product-desc">{product.description}</pre>
             </div>
         );
     }

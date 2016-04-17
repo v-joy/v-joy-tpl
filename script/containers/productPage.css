@@ -47,7 +47,8 @@
 
 .product-container .product-platform {
     font-size: 16px;
-    line-height: 20px;    
+    line-height: 20px;
+    margin: 18px 0px 14px 0px;
 }
 
 .product-container .product-platform .platform-title {
@@ -67,6 +68,6 @@
 .product-container .product-desc {
     font-size: 14px;
     line-height: 20px;
-    padding-top: 20px;
+    padding-top: 14px;
     color: #101010;
 }

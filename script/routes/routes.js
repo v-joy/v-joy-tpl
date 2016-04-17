@@ -12,9 +12,13 @@ import RankPage from '../containers/RankPage';
 import ProductPage from '../containers/ProductPage';
 
 class RouteMap extends Component {
+    onUpdate() {
+        document.documentElement.scrollTop = document.body.scrollTop =0;
+        window._hmt.push(['_trackPageview', window.location.pathname]);
+    }
     render() {
         return (
-            <Router history={browserHistory}>
+            <Router history={browserHistory} onUpdate={this.onUpdate.bind(this)}>
                 <Route path="/" component={App}>
                     <IndexRoute component={RankPage}/>
                     <Route path="/product/:productId" component={ProductPage}/>

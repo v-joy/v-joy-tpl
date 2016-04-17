@@ -1,7 +1,7 @@
 .topNavMenu
 {
-    margin: 20px;
-    display: none;
+    margin: 10px;
+    height: 30px;
 }
 .topNavMenu ul
 {
@@ -19,9 +19,8 @@
 .topNavMenu ul li a,
 .topNavMenu ul li a:visited
 {
-    background-color: #465c71; 
-    border: 1px #4e667d solid;
-    color: #dde4ec;
+    background-color: #EEE; 
+    color: #999;
     display: block;
     line-height: 1.35em;
     padding: 4px 20px;
@@ -29,16 +28,16 @@
     white-space: nowrap;
 }
 
-.topNavMenu ul li a:hover
+.topNavMenu ul li a:hover,
+.topNavMenu ul li a:active
 {
-    background-color: #bfcbd6;
-    color: #465c71;
+    background-color: #DDD;
+    color: #AAA;
     text-decoration: none;
 }
 
-.topNavMenu ul li a:active
-{
-    background-color: #465c71;
-    color: #cfdbe6;
-    text-decoration: none;
+.footer {
+    text-align: center;
+    margin: 10px 0px;
+    color: #999;
 }

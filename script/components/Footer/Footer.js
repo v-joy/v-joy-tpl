@@ -9,12 +9,7 @@ import React from 'react';
 class Footer extends React.Component {
     render() {
         return (
-           <div>
-           <br />
-           <br />
-           <br />
-           <br />
-           <br />
+           <div className="footer">
                     ©&nbsp;2016&nbsp;卢百万科技 
            </div>
         );

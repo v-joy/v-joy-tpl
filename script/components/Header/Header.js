@@ -5,15 +5,21 @@
  */
 
 import React from 'react';
-
-// import TopNavMenu from './TopNavMenu';
+import {Link} from 'react-router';
+import './Header.css';
 
 class Header extends React.Component {
     render() {
         return (
-           <div> {/*
-                <h3> 这里是通用的header 后面可以修改 </h3>
-                <TopNavMenu />*/}
+            <div className="topNavMenu">
+                <ul role="nav">
+                    <li>
+                        <Link to="/" activeClassName="active">最新排行榜</Link>
+                    </li>
+                    <li>
+                        <Link to="/article/1" activeClassName="active">关于我们</Link>
+                    </li>
+                </ul>
             </div>
         );
     }
