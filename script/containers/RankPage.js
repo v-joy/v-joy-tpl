@@ -18,9 +18,15 @@ class RankPage extends Component {
         super(props);
     }
 
-    componentWillMount() {
+    componentDidMount() {
         const {rankActions} = this.props;
         rankActions.fetchRank(this.props.params.rankId || null);
+    }
+
+    componentDidUpdate() {
+        if (this.props.rank.name) {
+            document.title = this.props.rank.name + '@红药丸';
+        };
     }
 
     render() {

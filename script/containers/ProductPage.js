@@ -23,6 +23,12 @@ class StaticPage extends Component {
         productActions.fetchProduct(this.props.params.productId);
     }
 
+    componentDidUpdate() {
+        if (this.props.product.chinesename) {
+            document.title = this.props.product.chinesename + '@红药丸';
+        };
+    }
+
     render() {
         let {product} = this.props;
         let platformlist = [];
