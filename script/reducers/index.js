@@ -12,7 +12,7 @@ import rank from './rank';
 
 
 export default combineReducers({
-    // routing,
+    routing,
     product,
     rank,
 });

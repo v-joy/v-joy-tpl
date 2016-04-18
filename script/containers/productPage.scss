@@ -1,13 +1,11 @@
 .product-container{
-    padding: 10px;
-}
-
-.product-container pre{
+  padding: 10px;
+  pre{
     white-space: pre-wrap;
     word-wrap: break-word;
+  }
 }
-
-.product-container .product-picture{
+.product-container .product-picture {
     display: block;
     width: 100%;
 }

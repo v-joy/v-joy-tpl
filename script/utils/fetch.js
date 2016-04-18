@@ -41,7 +41,7 @@ function fetch(path, httpMethod, params, options) {
 */
     if (httpMethod === 'get') {
         if (params) {
-            url = [url, makeQueryString(params)].join('');
+            url = [url, makeQueryString(params)].join('?');
         }
     } else {
         config = Object.assign({body: ''}, BASE_OPTIONS, {method: httpMethod}, options || {});

@@ -30,12 +30,16 @@ var webpackConfig = {
             {
                test: /\.(woff|woff2|svg|eot|ttf)$/,
                loader: 'url-loader?limit=10000&name=[name]-[hash].[ext]'
+            },
+            {
+                test: /\.scss$/,
+                loaders: ['style', 'css', 'sass']
             }
         ]
     },
     resolve: {
         fallback: [path.join(__dirname, 'node_modules')],
-        extensions: ['', '.js', '.jsx','.css']
+        extensions: ['', '.js', '.jsx','.css','.scss']
     },
     resolveLoader: {
         root: [path.join(__dirname, 'node_modules')]
