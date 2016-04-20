@@ -1,7 +1,14 @@
+
+@import '../../../scss/base.scss';
+
+#appRoot {
+    font-size: torem(16);
+}
+
 .topNavMenu
 {
-    margin: 10px;
-    height: 30px;
+    margin: torem(10);
+    height: torem(30);
 }
 .topNavMenu ul
 {
@@ -22,8 +29,8 @@
     background-color: #EEE; 
     color: #999;
     display: block;
-    line-height: 1.35em;
-    padding: 4px 20px;
+    line-height: torem(30);
+    padding: torem(4) torem(20);
     text-decoration: none;
     white-space: nowrap;
 }
@@ -38,6 +45,6 @@
 
 .footer {
     text-align: center;
-    margin: 10px 0px;
+    margin: torem(10) 0;
     color: #999;
 }

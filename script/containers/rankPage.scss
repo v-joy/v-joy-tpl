@@ -1,0 +1,12 @@
+@import '../../scss/base.scss';
+.rank-title {
+    padding: torem(20) 0 torem(8) 0;
+    text-align: center;
+}
+
+.rank-subtitle {
+    color: #999;
+    padding-right: torem(15);
+    text-align: right;
+    font-size: torem(12);
+}

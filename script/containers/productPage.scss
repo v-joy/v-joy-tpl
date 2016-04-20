@@ -1,80 +1,79 @@
+@import '../../scss/base.scss';
 .product-container{
-  padding: 10px;
-  pre{
-    white-space: pre-wrap;
-    word-wrap: break-word;
-  }
-}
-.product-container .product-picture {
-    display: block;
-    width: 100%;
-}
-
-.product-chinesename {
-    line-height: 36px;
-    font-size: 25px;
-    color:#101010;
-}
-
-.product-name {
-    line-height: 23px;
-    font-size: 16px;
-    color: #b3aab3;
-}
-
-.product-container .product-score{
-    display: block;
-    width: 19px;
-    height: 19px;
-    float: right;
-    margin: 7px 3px 7px 0px;
-}
-
-.product-container .product-scorenum{
-    color: #b3aab3;
-    line-height: 24px;
-    font-size: 18px;
-    text-align: right;
-}
-
-.product-container .product-picture {
-    display: block;
-    width: 100%;
-    min-height: 150px;
-}
-
-.product-container .product-platform {
-    font-size: 16px;
-    line-height: 20px;
-    margin: 18px 0px 14px 0px;
-}
-
-.product-container .product-platform .platform-title {
-    margin: 5px 20px 0 10px;
-}
-
-.product-container .product-platform .platform-device{
-    height: 25px;
-    padding: 0 10px;
-    line-height: 25px;
-    color: #b3aab3;
-    border: 1px solid #aaaaaa;
-    margin: 5px 10px 0 0;
-    font-size: 14px;
-}
-
-.product-container .product-desc {
-    font-size: 14px;
-    line-height: 20px;
-    padding-top: 14px;
-    color: #101010;
-}
-
-.product-container .product-toplink {
-    display: block;
-    margin: 10px auto;
-    width: 100%;
-    text-align: center;
-    font-size: 14px;
-    line-height: 20px;
+    padding: torem(10);
+    pre{
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+    .product-picture {
+        display: block;
+        width: 100%;
+    }
+    .product-chinesename {
+        line-height: torem(36);
+        font-size: torem(25);
+        color:#101010;
+    }
+    .product-name {
+        line-height: torem(23);
+        font-size: torem(16);
+        color: #b3aab3;
+    }
+    .product-score{
+        display: block;
+        width: torem(19);
+        height: torem(19);
+        float: right;
+        margin: torem(7) torem(3) torem(7) torem(0);
+    }
+    .product-scorenum{
+        color: #b3aab3;
+        line-height: torem(24);
+        font-size: torem(18);
+        text-align: right;
+    }
+    .product-picture {
+        display: block;
+        width: 100%;
+        min-height: torem(150);
+    }
+    .product-platform {
+        font-size: torem(16);
+        line-height: torem(20);
+        margin: torem(18) torem(0) torem(14) torem(0);
+        .product-devicepic img {
+            width: torem(30);
+            display: block;
+            float: left;
+        }
+        .platform-title {
+            margin: torem(5) torem(20) 0 torem(10);
+            display: block;
+            float: left;
+        }
+        .platform-device{
+            height: torem(25);
+            padding: 0 torem(10);
+            line-height: torem(25);
+            color: #b3aab3;
+            border: torem(1) solid #aaaaaa;
+            margin: torem(5) torem(10) 0 0;
+            font-size: torem(14);
+            display: inline-block;
+        }
+    }
+    .product-desc {
+        font-size: torem(14);
+        line-height: torem(20);
+        padding-top: torem(14);
+        color: #101010;
+    }
+    .product-toplink {
+        display: block;
+        margin: torem(10) auto;
+        width: 100%;
+        text-align: center;
+        font-size: torem(14);
+        line-height: torem(20);
+    }
 }

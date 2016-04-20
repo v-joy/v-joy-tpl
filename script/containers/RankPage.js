@@ -8,7 +8,7 @@ import React, {Component} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import Rankitem from '../components/rankitem/rankitem';
-import './RankPage.css';
+import './RankPage.scss';
 
 // 导入相关的actions
 import * as rankActionCreators from '../actions/rank';
@@ -40,8 +40,8 @@ class RankPage extends Component {
         });
         return (
             <div>
-                <h2 className="text-center rank-title">{rank.name}</h2>
-                <div className="clear rank-subtitle"><h6 className="f-right">{rank.subname}</h6></div>
+                <h2 className="rank-title">{rank.name}</h2>
+                <div className="clear rank-subtitle">{rank.subname}</div>
                 <ul>
                     {rankItems}
                 </ul>

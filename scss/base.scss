@@ -1,0 +1,4 @@
+@function torem( $px ){
+    @return $px*320/$designWidth/20 + rem;
+}
+$designWidth : 375;

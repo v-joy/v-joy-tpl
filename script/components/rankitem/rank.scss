@@ -1,0 +1,52 @@
+@import '../../../scss/base.scss';
+.rank-item-container {
+    border: torem(1) solid #DDD;
+    margin: torem(10);
+    padding: torem(10);
+    position: relative;
+    box-shadow: 0 0 torem(3)  #999;
+    img {
+        height: torem(56);
+        width: torem(150);
+    }
+    .rank-item-title {
+        margin-left: torem(160); 
+    }
+    .rank-item-chinesename {
+        color: #101010;
+        font: torem(16)/torem(23) 'Microsoft';
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space:nowrap;
+        font-weight: 500;
+        margin-right: torem(20);
+    }
+    .rank-item-name {
+        color: #101010;
+        font: torem(11)/torem(16) 'Microsoft';
+        overflow: hidden;
+        display: table-cell;
+        vertical-align: middle;
+        height: torem(32);
+    }
+    .rank-item-desc {
+        padding: torem(10) 0;
+        font: torem(13)/torem(18) 'Microsoft';
+        color: #b3aab3;
+    }
+    .rank-item-index {
+        position: absolute;
+        right: torem(-1);
+        top: torem(-1);
+        width: torem(26);
+        height: torem(26);
+        border: torem(1) solid #DDD;
+        display: block;
+        text-align: center;
+        line-height: torem(28);
+        color: #101010;
+    }
+    .rank-item-top {
+        position: relative;
+    }
+}

@@ -6,7 +6,7 @@
 
 import React from 'react';
 import {Link} from 'react-router';
-import './rank.css';
+import './rank.scss';
 
 class Rankitem extends React.Component {
     clickHandler(e){

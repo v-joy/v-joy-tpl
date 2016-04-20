@@ -10,7 +10,7 @@ class Footer extends React.Component {
     render() {
         return (
            <div className="footer">
-                    ©&nbsp;2016&nbsp;卢百万科技 
+                    ©&nbsp;2016&nbsp;xxx科技 
            </div>
         );
     }

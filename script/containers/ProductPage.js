@@ -36,7 +36,7 @@ class StaticPage extends Component {
         if (product.platform) {
             product.platform.map((platform,i) => {
                 return platformlist.push(
-                    <span key={i} className="f-left platform-device">{platform}</span>
+                    <span key={i} className="platform-device">{platform}</span>
                 );
             });
         };
@@ -64,9 +64,10 @@ class StaticPage extends Component {
                 <img className="product-picture" src={picurl} />
                 <div className="product-platform clear">
                     <div className="f-left">
-                        <img className="f-left" src="/asset/imgs/OS.png" />
-                        <span className="f-left platform-title">支持设备</span>
-                        <div className="clear"></div>
+                        <div className="product-devicepic clear">
+                            <img src="/asset/imgs/OS.png" />
+                            <span className="platform-title">支持设备</span>
+                        </div>
                         {platformlist}
                     </div>
                     <div className="f-right">
